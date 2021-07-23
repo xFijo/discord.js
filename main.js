@@ -9,11 +9,9 @@ client.on('ready', () => {
   client.user.setActivity('*help', { type: 'WATCHING' })
 });
 
-
 client.on('message', async message => {
   if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 });
-
 
 if (message.content === 'ping') { // regular commands
    message.channel.send('pong!')
